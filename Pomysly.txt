@@ -1,0 +1,91 @@
+PROPOZYCJE MODELI 3D – SZYBKIE DO WYKONANIA
+===========================================
+Wymagania z Instrukcja.txt:
+ - Ruchome elementy
+ - Napis „Wydział Elektryczny" (lub logo/skrót) w widocznym miejscu
+ - Maks. 10 cm po najdłuższej krawędzi
+ - Format pliku: STL lub OBJ + plik źródłowy (FreeCAD preferowany)
+ - Opcjonalnie: sprężyny, magnesy, śrubki
+
+---
+
+POMYSŁ 1 – BRELOK Z OBRACAJĄCYM SIĘ KOŁEM (NAJPROSTSZY)
+---------------------------------------------------------
+Co to jest:
+  Breloczek na klucze złożony z dwóch elementów:
+    - Ramka/korpus z napisem „WE" lub „Wydział Elektryczny"
+    - Małe kółko/tarcza osadzone na osi w środku ramki, które może się obracać
+
+Dlaczego szybki:
+  - Tylko 2 proste bryły
+  - Ruchomość = pasowane łożysko/oś bez potrzeby sprężyn
+  - Mały (ok. 5–6 cm)
+
+Jak zrobić w FreeCAD:
+  1. Stwórz Sketch → narysuj prostokąt (korpus breloka) → wyciągnij (Pad)
+  2. Dodaj tekst „WE" jako szkic z literami lub użyj narzędzia Draft → ShapeString,
+     następnie wyciągnij tekst i wykonaj operację „Cut" (wycięcie w korpusie)
+     lub „Fuse" (wypukły napis)
+  3. Stwórz walec (Cylinder) o średnicy mniejszej niż otwór w ramce → to będzie koło
+  4. W ramce stwórz otwór o średnicy o 0,2–0,3 mm większej niż oś koła (luz drukarski)
+  5. Zapisz oba elementy jako osobne STL
+
+Czas: ~2–3 godziny
+
+---
+
+POMYSŁ 2 – MAŁE PUDEŁKO Z ZATRZASKOWĄ POKRYWKĄ
+------------------------------------------------
+Co to jest:
+  Miniaturowe pudełko (np. na wizytówki lub drobne elementy elektroniczne)
+  z pokrywką połączoną zawiasem wydrukowanym razem z pudełkiem (print-in-place hinge).
+
+Dlaczego szybki:
+  - Pudełko + zawiasy = jeden wydruk (print-in-place)
+  - Napis na wieczku lub ścianie bocznej
+  - Dobrze znane projekty, można się wzorować (licencja CC)
+
+Jak zrobić w FreeCAD:
+  1. Stwórz bryłę pudełka (Pad prostokąta), następnie Shell (wydrąż wnętrze)
+  2. Zaprojektuj zawiasy jako para walców z luźnym dopasowaniem (0,3 mm luzu)
+     osadzonych na jednej krawędzi pudełka i pokrywki
+  3. Dodaj napis „Wydział Elektryczny" na pokrywce przez ShapeString + Pad/Cut
+  4. Eksportuj jako jeden plik STL (pokrywka i pudełko połączone zawiasem)
+
+Czas: ~3–4 godziny
+
+---
+
+POMYSŁ 3 – MINI WIATRAK / ŚMIGŁO NA ŁOŻYSKU (POLECANY)
+-------------------------------------------------------
+Co to jest:
+  Podstawka z napisem „Wydział Elektryczny" + śmigło (3–4 łopatki) osadzone
+  na pionowej osi – obraca się swobodnie po dmuchnięciu.
+
+Dlaczego szybki:
+  - Podstawka to prosta bryła z wytłoczonym napisem
+  - Śmigło to kilka pochylonych prostopadłościanów/skrzydełek wokół walca
+  - Dwa elementy, łatwe pasowanie
+
+Jak zrobić w FreeCAD:
+  1. Stwórz walcową lub prostopadłościenną podstawkę (Pad)
+  2. Dodaj napis „WE" lub „Wydział Elektryczny" przez ShapeString → Cut (wgłębiony)
+  3. W środku podstawki zrób pionowy otwór na oś (np. Ø4 mm)
+  4. Stwórz śmigło: centralny walec (Ø3,7 mm – luz 0,3 mm) + 3 łopatki
+     (Pad pod kątem ~20° dla efektu aerodynamicznego)
+  5. Eksportuj podstawkę i śmigło jako osobne pliki STL
+
+Czas: ~3–4 godziny
+
+---
+
+WSKAZÓWKI OGÓLNE (optymalizacja do druku 3D):
+  - Unikaj nawisów powyżej 45° bez supportów
+  - Zachowaj luz 0,2–0,3 mm między ruchomymi częściami
+  - Minimalna grubość ścianki: 1,2 mm (= 3 przejścia głowicy 0,4 mm)
+  - Orientuj model tak, aby warstwy druku nie rozchodziły się w miejscach naprężeń
+  - Tekst wgłębiony (Cut) jest łatwiejszy do wydruku niż wypukły
+
+REKOMENDACJA:
+  Zacznij od POMYSŁU 1 (brelok) lub POMYSŁU 3 (wiatrak) – oba mają
+  tylko 2 elementy i prostą geometrię. Wiatrak wygląda efektowniej.
