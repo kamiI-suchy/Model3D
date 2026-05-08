@@ -1,0 +1,10 @@
+Należy wykonać model przestrzenny zaproponowanego projektu, który spełni poniższe wymogi. Stosując się do wytycznych i zakresu prac należy zaprojektować model 3D w dowolnym wybranym przez siebie programie CAD. Preferowane jest oprogramowanie FreeCAD. W tworzonym modelu należy uwzględnić kwestie związane z optymalizacją do wydruku 3D, które były omawiane na wykładzie.  
+
+Zakłada się, że model powinien posiadać ruchome elementy lub składać się z ruchomych elementów. W dowolnym widocznym miejscu na modelu ma być wkomponowany napis Wydział Elektryczny, lub logo albo skrót nazwy. Może również być wykorzystana nazwa lub logo Uczelni. Gotowy projekt nie powinien być zbyt duży, maksymalnie 10 cm po najdłuższej krawędzi w trakcie wydruku. Obiekt może być drukowany za jednym podejściem lub może składać się z kilku mniejszych modeli, które będą wymagały później złożenia. W projekcie można przewidzieć użycie dodatkowych elementów takich jak sprężyny, magnesy czy śrubki.                  
+
+W ramach realizacji należy przesłać model lub modele w formie stl lub obj, jak i projekt źródłowy z programu, w którym został stworzony. Można wzorować się na innych pomysłach lub wykorzystywać inne modele, jeśli licencja na to pozwala (należy dodać źródło). 
+
+
+Mam takie zadanie. Jaki model mogę zrobić, żeby nie zajęło mi to dużo czasu plus nie było jakieś skomplikowane. Chcę do tego użyć MoI 3D. Z tego co wiem, to drukarka to Bambu Lab X1C z głowicą 0.2 mm
+
+Myślałem o jakimś prostym takim fidget toy, które by się składało z kilku elementów, coś jak taki przełącznik klawiatury, ale takie z naciskalnym elementem, najlepiej jakby miało taki jakby feedback sensoryczny tego kliknięcia tak jak są switche klawiaturowe tactile albo clicky. Ale nie musi mieć kształtu switcha ani nic, po prostu taki feedback kliknięcia. Myślałem, aby zrobić to z 4 części. Dolna obudowa z miejscem na sprężynę, górna obudowa z zatrzaskami domykającymi całość, taki stem jak jest w switchu też z tym na sprężynę i czwarty element taka nakładka na ten stem żeby nie klikać go tylko tą nakładkę gdzie będzie logo
